@@ -6,7 +6,7 @@ BINS = $(SRCS:%.c=%)
 
 all: $(BINS)
 
-build/%: %.c
+%: %.c
 	$(CC) $(CFLAGS) $< -o $@
 
 clean:
