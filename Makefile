@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Werror
 
 SRCS = $(shell find . -name '*.c')
-BINS = $(SRCS:%.c=build/%)
+BINS = $(SRCS:%.c=%)
 
 all: $(BINS)
 
